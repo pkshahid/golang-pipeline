@@ -47,6 +47,6 @@ jobs:
             VERSION=${{ steps.version_step.outputs.version }}
         env:
           DOCKER_USERNAME: ${{ github.actor }}
-          DOCKER_PASSWORD: ${{ secrets.GH_TOKEN }}
+          DOCKER_PASSWORD: ${{ secrets.GH_SECRET }}
 
-          # 1.0.5
+          # 1.0.6
