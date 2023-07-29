@@ -48,3 +48,5 @@ jobs:
         env:
           DOCKER_USERNAME: ${{ github.actor }}
           DOCKER_PASSWORD: ${{ secrets.GH_TOKEN }}
+
+          # 1.0.5
