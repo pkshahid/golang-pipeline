@@ -55,4 +55,4 @@ jobs:
           DOCKER_USERNAME: ${{ github.actor }}
           DOCKER_PASSWORD: ${{ secrets.GH_SECRET }}
 
-          # 1.0.7
+          # 1.0.9
