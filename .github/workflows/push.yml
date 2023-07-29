@@ -47,12 +47,12 @@ jobs:
         with:
           push: true
           tags: |
-            docker.pkg.github.com/${{ github.repository }}/${{ env.VERSION_TAG }}
-            docker.pkg.github.com/${{ github.repository }}/${{ env.LASTEST_TAG }}
+            ghcr.io/${{ github.repository }}/${{ env.VERSION_TAG }}
+            ghcr.io/${{ github.repository }}/${{ env.LASTEST_TAG }}
           build-args: |
             VERSION=${{ steps.version_step.outputs.version }}
         env:
           DOCKER_USERNAME: ${{ github.actor }}
           DOCKER_PASSWORD: ${{ secrets.GH_SECRET }}
 
-          # 1.0.9
+          # 1.0.10
